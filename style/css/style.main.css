@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+  nav ul li {
+    font-size: medium;
+  }
+  #container_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main div .card {
+    width: 18rem;
+  }
+}
+
+.grainy-gradient-intro:before {
+  background: #c3ccea;
+  -webkit-filter: url(#f);
+          filter: url(#f);
+}
+
+.grainy-gradient-intro:before, .grainy-gradient-intro:after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
+  --mask: var(--grad), var(--grad);
+  -webkit-mask: var(--mask);
+  -webkit-mask-composite: source-in;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+  mix-blend-mode: unset;
+  content: "";
+}
+
+.grainy-gradient-intro:after {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #760dfe), color-stop(#f51b26), to(#fd9900));
+  background: linear-gradient(90deg, #760dfe 20%, #f51b26, #fd9900);
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#ee7724), color-stop(#d8363a), color-stop(#dd3675), to(#b44593));
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+#card_footer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #ADD8E6;
+}
+
+.btn-primary:hover {
+  background-color: #8cafbb;
+}
+/*# sourceMappingURL=style.main.css.map */

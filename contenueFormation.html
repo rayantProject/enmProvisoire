@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+
+  <link rel="icon" href="asset/EcoleENM-removebg-preview.png">
+
+  <link rel="stylesheet" href="style/css/style.main.css">
+  </head>
+    <body onload="loadFormations()">
+
+        <header>
+
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="margin-right: 15%;">
+                    <i class="fas fa-bars"></i>
+                    </button>
+                        <a class="navbar-brand mx-auto" href="#">
+                            <img src="asset/logo.jpeg" height="40" alt="" loading="lazy" />
+                        </a>
+            
+                        <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="navbarNav">
+            
+                            <div class="offcanvas-header">
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="asset/logo.jpeg" height="40" alt="" loading="lazy" /></h5>
+                              <div style="width: 32px;"></div>
+                            </div>
+            
+                            <div class="offcanvas-body justify-content-center text-center display-6">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">
+                                        Acceuil
+                                    </a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="formation.html">
+                                        formations
+                                    </a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="modalite.html">
+                                        modalité
+                                    </a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="contenueFormation.html">
+                                        contenue de formations
+                                    </a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="preinscription.html">
+                                        Préinscription
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                        </div>
+                        <div class="d-flex">
+                            <!-- <button type="button" class="btn btn-link px-3 me-2">
+                                Connexion
+                            </button> -->
+                            <a href="nousContacter.html" role="button" class="btn btn-outline-primary active rounded-pill">
+                                contact
+                            </a>
+                            <!-- #1B5268 -->
+                        </div>
+            
+                    </div>
+            
+                </nav>
+            
+                </header>
+
+    <main>
+
+        <div id="contenue"></div>
+
+
+        <!-- <div class="w-100 bg-primary" style="padding: 150px 10%;">
+
+            <span class="h2 text-white">
+                ANGLAIS A1/A2 VISO +E-LEARNING
+            </span>
+
+            <p class="text-white">
+                TARIF DE LA FORMATION 1800€
+            </p>
+
+            <a class="btn btn-danger" href="pdf/pdf1.pdf" role="button">CONTENUE FORMATION</a>
+        </div> -->
+        
+    </main>
+
+
+
+
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        <!-- Right -->
+        <div class="mx-auto">
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 ">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <!-- <i class="fas fa-gem me-3"></i> -->
+                        <img class="image" src="asset/EcoleENM-removebg-preview.png" alt="ENMlogo" style="height: 150px;width: 230px;">
+                    </h6>
+
+                    <p>
+
+                        
+                        <!-- Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Liens utiles
+                    </h6>
+                    <p>
+                        <a href="modalite.html" class="text-reset">modalité</a>
+                    </p>
+                    <p>
+                        <a href="contenueFormation.html" class="text-reset">contenues formations</a>
+                    </p>
+                    <p>
+                        <a href="formation.html" class="text-reset">formations</a>
+                    </p>
+                    <p>
+                        <a href="preinscription.html" class="text-reset">préinscription</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Lyon, Vaulx en Velin 69120, FR</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i> ecoledesnouveauxmetiers@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i>+ 33 6 38 03 20 80</p>
+                    <p><i class="fas fa-print me-3"></i>+ 33 6 38 03 20 80</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ID&RT</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+</body>
+<script src="js/contenuFormation.js"></script>
+<script>
+
+
+let c = document.getElementById("contenue")
+
+
+function loadFormations() {
+    let bgBut, bgF
+
+    for (let index = 0; index < tab.length; index++) {
+
+        bgBut = index%2 ? "btn-primary" : "btn-danger"
+        bgF = index%2 ? "btn-danger" : "btn-primary"
+
+
+        c.innerHTML += '<div class="w-100 '+bgF+'" style="padding: 150px 10%;"><span class="h2 text-white">'+tab[index].nom+'</span><p class="text-white">TARIF DE LA FORMATION '+tab[index].tarif+'€</p><a class="btn '+bgBut+'" href="'+tab[index].pdf+'" role="button">CONTENUE FORMATION</a></div>'
+        
+    }
+
+}
+
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
+</html>

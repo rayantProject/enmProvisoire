@@ -1,4 +1,23 @@
-@import 'nav';
-@import 'index';
-@import 'preinscrition';
 @import 'mdb.free';
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-2 {
+    background-color: #d3d3d3;
+}
+
+.bg-1 {
+    background-color: #1e5069;
+}
+
+// .bg-danger {
+//     background-color: #000;
+// }
+.btn-grey {
+    background-color: #fff;
+}
+
+.btn-grey:hover {
+    background-color: #fff;
+}

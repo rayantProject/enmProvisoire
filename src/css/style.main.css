@@ -17715,4 +17715,24 @@ fieldset:disabled
   font-family: 'Font Awesome 6 Pro', 'Font Awesome 6 Free';
   font-size: 1.7rem;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-2 {
+  background-color: #d3d3d3;
+}
+
+.bg-1 {
+  background-color: #1e5069;
+}
+
+.btn-grey {
+  background-color: #fff;
+}
+
+.btn-grey:hover {
+  background-color: #fff;
+}
 /*# sourceMappingURL=style.main.css.map */

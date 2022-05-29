@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -7,28 +8,25 @@
     <title>ENM</title>
     <!-- MDB icon -->
     <link rel="icon" href="asset/EcoleENM-removebg-preview.png" type="image/x-icon" />
-    
-    
-    
+
+
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="src/boostrap_file/css/bootstrap.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- Google Fonts Roboto -->
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <!-- MDB -->
-    
+
     <link rel="stylesheet" href="src/css/style.main.css" />
+
 </head>
+
 <body onload="loadFormations()">
     <header>
-        
-        
+
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="margin-right: 15%;">
@@ -37,15 +35,15 @@
                 <a class="navbar-brand mx-auto" href="#">
                     <img src="asset/logo.jpeg" height="40" alt="" loading="lazy" />
                 </a>
-                
+
                 <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="navbarNav">
-                    
+
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="asset/logo.jpeg" height="40" alt="" loading="lazy" /></h5>
                         <div style="width: 32px;"></div>
                     </div>
-                    
+
                     <div class="offcanvas-body justify-content-center text-center">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -79,7 +77,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="d-flex">
                     <!-- <button type="button" class="btn btn-link px-3 me-2">
@@ -90,13 +88,13 @@
                     </a>
                     <!-- #1B5268 -->
                 </div>
-                
+
             </div>
-            
+
         </nav>
-        
+
     </header>
-    
+
     <main>
 
         <div id="contenue"></div>
@@ -114,15 +112,15 @@
 
             <a class="btn btn-danger" href="pdf/pdf1.pdf" role="button">CONTENUE FORMATION</a>
         </div> -->
-        
+
     </main>
 
 
-    
+
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            
+
             <!-- Right -->
             <div class="mx-auto">
                 <a href="" class="me-4 text-reset">
@@ -144,7 +142,7 @@
             <!-- Right -->
         </section>
         <!-- Section: Social media -->
-        
+
         <!-- Section: Links  -->
         <section class="">
             <div class="container text-center text-md-start mt-5">
@@ -157,13 +155,13 @@
                             <!-- <i class="fas fa-gem me-3"></i> -->
                             <img class="image" src="asset/EcoleENM-removebg-preview.png" alt="ENMlogo" style="height: 150px;width: 230px;">
                         </h6>
-                        
+
                         <p>
-                            
-                            
+
+
                             <!-- Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
                         </p>
-                        
+
                     </div>
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -185,7 +183,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-                    
+
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
@@ -205,7 +203,7 @@
             </div>
         </section>
         <!-- Section: Links  -->
-        
+
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2022 Copyright:
@@ -213,36 +211,33 @@
         </div>
         <!-- Copyright -->
     </footer>
-    
-    
+
+
 </body>
 <script src="js/contenuFormation.js"></script>
 <script>
+    let c = document.getElementById("contenue")
 
 
-let c = document.getElementById("contenue")
+    function loadFormations() {
+        let bgBut, bgF
+
+        for (let index = 0; index < tab.length; index++) {
+
+            bgF = index % 2 ? "bg-2" : "bg-1"
+            bgBut = "btn-grey"
 
 
-function loadFormations() {
-    let bgBut, bgF
+            c.innerHTML += '<div class="w-100 ' + bgF + '" style="padding: 150px 10%;"><span class="h2 text-white">' + tab[index].nom + '</span><p class="text-white">TARIF DE LA FORMATION ' + tab[index].tarif + '€</p><a class="btn ' + bgBut + '" href="' + tab[index].pdf + '" role="button">CONTENUE FORMATION</a></div>'
 
-    for (let index = 0; index < tab.length; index++) {
+        }
 
-        bgBut = index%2 ? "btn-primary" : "btn-danger"
-        bgF = index%2 ? "btn-danger" : "btn-primary"
-
-
-        c.innerHTML += '<div class="w-100 '+bgF+'" style="padding: 150px 10%;"><span class="h2 text-white">'+tab[index].nom+'</span><p class="text-white">TARIF DE LA FORMATION '+tab[index].tarif+'€</p><a class="btn '+bgBut+'" href="'+tab[index].pdf+'" role="button">CONTENUE FORMATION</a></div>'
-        
     }
-
-}
-
-
 </script>
 
 <script type="text/javascript" src="src/boostrap_file/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Custom scripts -->
 <script type="text/javascript"></script>
+
 </html>
